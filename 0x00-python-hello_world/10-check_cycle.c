@@ -6,11 +6,17 @@
  */
 int check_cycle(listint_t *list)
 {
-	const listint_t *current;
+	 listint_t *current = list;
+	 listint_t *forward = list;
 
-	current = list;
-	current = current->next;
-	if (current == NULL)
+	if (list == NULL)
 		return (0);
-	return (1);
+	while (current && forward && forward->next)
+	{
+		current = current->next;
+		forward = forward->next->next;
+		if (current == forward)
+			return (1);
+	}
+	return (0);
 }
