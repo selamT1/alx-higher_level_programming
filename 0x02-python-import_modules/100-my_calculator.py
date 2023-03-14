@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
+    """it accept argument from user and print the resutl"""
     import sys
     from calculator_1 import add, sub, mul, div
-
+    """ check argument is equals to 3 or not """
     if len(sys.argv) - 1 != 3:
-        print('Usage: ./100-my_calculator.py <a> <operator> <b')
+        print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         sys.exit(1)
 
     ops = {'+': add, '-': sub, '*': mul, '/': div}
