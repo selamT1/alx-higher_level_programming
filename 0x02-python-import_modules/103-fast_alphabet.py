@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-word = 'acbdefghijklmnopqrstuvwxyz'
-print("{:s}".format(word.upper()))
+import string
+print(string.ascii_uppercase)
