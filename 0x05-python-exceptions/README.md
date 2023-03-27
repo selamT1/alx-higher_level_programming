@@ -40,3 +40,11 @@ Write a function that raises a type exception.
 6. Raise a message
 mandatory
 Write a function that raises a name exception with a message.
+
+7. Safe integer print with error message
+#advanced
+Write a function that prints an integer.
+
+8. Safe function
+#advanced
+Write a function that executes a function safely.
